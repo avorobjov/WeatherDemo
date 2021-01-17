@@ -14,7 +14,23 @@
 		FA330C1A25B41B57006E3E5C /* WeatherDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C1925B41B57006E3E5C /* WeatherDemoUITests.swift */; };
 		FA330C4B25B42687006E3E5C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C4A25B42687006E3E5C /* AppCoordinator.swift */; };
 		FA330C5025B426B2006E3E5C /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C4F25B426B2006E3E5C /* AppAssembly.swift */; };
-		FA330C5525B42752006E3E5C /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C5425B42752006E3E5C /* MainBuilder.swift */; };
+		FA330C8625B42E79006E3E5C /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C8125B42E79006E3E5C /* MainBuilder.swift */; };
+		FA330C8725B42E79006E3E5C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA330C8225B42E79006E3E5C /* MainViewController.xib */; };
+		FA330C8825B42E79006E3E5C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C8325B42E79006E3E5C /* MainViewController.swift */; };
+		FA330C8925B42E79006E3E5C /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C8425B42E79006E3E5C /* MainContract.swift */; };
+		FA330C8A25B42E79006E3E5C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C8525B42E79006E3E5C /* MainPresenter.swift */; };
+		FA330C9025B42EA1006E3E5C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C8F25B42EA1006E3E5C /* View.swift */; };
+		FA330C9825B42EA8006E3E5C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C9725B42EA8006E3E5C /* Presenter.swift */; };
+		FA330C9D25B42EBA006E3E5C /* TitleSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330C9C25B42EBA006E3E5C /* TitleSettable.swift */; };
+		FA330CA225B42EC3006E3E5C /* MessagePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CA125B42EC3006E3E5C /* MessagePresenting.swift */; };
+		FA330CAB25B430B9006E3E5C /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = FA330CAA25B430B9006E3E5C /* Response.json */; };
+		FA330CB025B43935006E3E5C /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CAF25B43935006E3E5C /* ForecastView.swift */; };
+		FA330CB625B4612F006E3E5C /* ForecastHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CB425B4612F006E3E5C /* ForecastHeaderCell.swift */; };
+		FA330CB725B4612F006E3E5C /* ForecastHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA330CB525B4612F006E3E5C /* ForecastHeaderCell.xib */; };
+		FA330CBD25B4613E006E3E5C /* ForecastValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CBB25B4613E006E3E5C /* ForecastValueCell.swift */; };
+		FA330CBE25B4613E006E3E5C /* ForecastValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA330CBC25B4613E006E3E5C /* ForecastValueCell.xib */; };
+		FA330CC825B472BC006E3E5C /* ForecastViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CC725B472BC006E3E5C /* ForecastViewLayout.swift */; };
+		FA330CD025B47F42006E3E5C /* Icons.json in Resources */ = {isa = PBXBuildFile; fileRef = FA330CCF25B47F42006E3E5C /* Icons.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +64,25 @@
 		FA330C1B25B41B57006E3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA330C4A25B42687006E3E5C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FA330C4F25B426B2006E3E5C /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
-		FA330C5425B42752006E3E5C /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		FA330C6025B42A5D006E3E5C /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
 		FA330C6725B42B58006E3E5C /* Entities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Entities; sourceTree = "<group>"; };
+		FA330C8125B42E79006E3E5C /* MainBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		FA330C8225B42E79006E3E5C /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FA330C8325B42E79006E3E5C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA330C8425B42E79006E3E5C /* MainContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		FA330C8525B42E79006E3E5C /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		FA330C8F25B42EA1006E3E5C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FA330C9725B42EA8006E3E5C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		FA330C9C25B42EBA006E3E5C /* TitleSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSettable.swift; sourceTree = "<group>"; };
+		FA330CA125B42EC3006E3E5C /* MessagePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenting.swift; sourceTree = "<group>"; };
+		FA330CAA25B430B9006E3E5C /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		FA330CAF25B43935006E3E5C /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		FA330CB425B4612F006E3E5C /* ForecastHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHeaderCell.swift; sourceTree = "<group>"; };
+		FA330CB525B4612F006E3E5C /* ForecastHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastHeaderCell.xib; sourceTree = "<group>"; };
+		FA330CBB25B4613E006E3E5C /* ForecastValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastValueCell.swift; sourceTree = "<group>"; };
+		FA330CBC25B4613E006E3E5C /* ForecastValueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastValueCell.xib; sourceTree = "<group>"; };
+		FA330CC725B472BC006E3E5C /* ForecastViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewLayout.swift; sourceTree = "<group>"; };
+		FA330CCF25B47F42006E3E5C /* Icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Icons.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +135,13 @@
 		FA330BF625B41B56006E3E5C /* WeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FA330C4825B4266C006E3E5C /* Modules */,
+				FA330C8E25B42E90006E3E5C /* Protocols */,
+				FA330C7F25B42E79006E3E5C /* Modules */,
 				FA330C4725B425B5006E3E5C /* SupportFiles */,
 				FA330C4A25B42687006E3E5C /* AppCoordinator.swift */,
 				FA330C4F25B426B2006E3E5C /* AppAssembly.swift */,
+				FA330CCF25B47F42006E3E5C /* Icons.json */,
+				FA330CAA25B430B9006E3E5C /* Response.json */,
 				FA330C0025B41B56006E3E5C /* Assets.xcassets */,
 			);
 			path = WeatherDemo;
@@ -140,20 +175,49 @@
 			name = SupportFiles;
 			sourceTree = "<group>";
 		};
-		FA330C4825B4266C006E3E5C /* Modules */ = {
+		FA330C7F25B42E79006E3E5C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FA330C4925B4266C006E3E5C /* Main */,
+				FA330C8025B42E79006E3E5C /* Main */,
 			);
 			path = Modules;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		FA330C4925B4266C006E3E5C /* Main */ = {
+		FA330C8025B42E79006E3E5C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FA330C5425B42752006E3E5C /* MainBuilder.swift */,
+				FA330CA625B42F18006E3E5C /* Views */,
+				FA330C8125B42E79006E3E5C /* MainBuilder.swift */,
+				FA330C8425B42E79006E3E5C /* MainContract.swift */,
+				FA330C8525B42E79006E3E5C /* MainPresenter.swift */,
+				FA330C8325B42E79006E3E5C /* MainViewController.swift */,
+				FA330C8225B42E79006E3E5C /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		FA330C8E25B42E90006E3E5C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA330CA125B42EC3006E3E5C /* MessagePresenting.swift */,
+				FA330C9725B42EA8006E3E5C /* Presenter.swift */,
+				FA330C9C25B42EBA006E3E5C /* TitleSettable.swift */,
+				FA330C8F25B42EA1006E3E5C /* View.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA330CA625B42F18006E3E5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA330CB425B4612F006E3E5C /* ForecastHeaderCell.swift */,
+				FA330CB525B4612F006E3E5C /* ForecastHeaderCell.xib */,
+				FA330CBB25B4613E006E3E5C /* ForecastValueCell.swift */,
+				FA330CBC25B4613E006E3E5C /* ForecastValueCell.xib */,
+				FA330CAF25B43935006E3E5C /* ForecastView.swift */,
+				FA330CC725B472BC006E3E5C /* ForecastViewLayout.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA330CAB25B430B9006E3E5C /* Response.json in Resources */,
 				FA330C0425B41B56006E3E5C /* LaunchScreen.storyboard in Resources */,
+				FA330CD025B47F42006E3E5C /* Icons.json in Resources */,
+				FA330C8725B42E79006E3E5C /* MainViewController.xib in Resources */,
+				FA330CB725B4612F006E3E5C /* ForecastHeaderCell.xib in Resources */,
+				FA330CBE25B4613E006E3E5C /* ForecastValueCell.xib in Resources */,
 				FA330C0125B41B56006E3E5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,10 +376,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA330CB625B4612F006E3E5C /* ForecastHeaderCell.swift in Sources */,
+				FA330C9825B42EA8006E3E5C /* Presenter.swift in Sources */,
+				FA330C9025B42EA1006E3E5C /* View.swift in Sources */,
+				FA330C8625B42E79006E3E5C /* MainBuilder.swift in Sources */,
 				FA330C4B25B42687006E3E5C /* AppCoordinator.swift in Sources */,
+				FA330CA225B42EC3006E3E5C /* MessagePresenting.swift in Sources */,
+				FA330C9D25B42EBA006E3E5C /* TitleSettable.swift in Sources */,
 				FA330C5025B426B2006E3E5C /* AppAssembly.swift in Sources */,
+				FA330CC825B472BC006E3E5C /* ForecastViewLayout.swift in Sources */,
 				FA330BF825B41B56006E3E5C /* AppDelegate.swift in Sources */,
-				FA330C5525B42752006E3E5C /* MainBuilder.swift in Sources */,
+				FA330C8925B42E79006E3E5C /* MainContract.swift in Sources */,
+				FA330C8A25B42E79006E3E5C /* MainPresenter.swift in Sources */,
+				FA330C8825B42E79006E3E5C /* MainViewController.swift in Sources */,
+				FA330CBD25B4613E006E3E5C /* ForecastValueCell.swift in Sources */,
+				FA330CB025B43935006E3E5C /* ForecastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
