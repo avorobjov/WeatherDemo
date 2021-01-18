@@ -8,8 +8,6 @@
 import UIKit
 
 final class MainViewController: UIViewController {
-    static let margin: CGFloat = 10
-
     @IBOutlet private var sourcePicker: UISegmentedControl!
     @IBOutlet private var forecastView: ForecastView!
 
@@ -29,6 +27,8 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground
+
+        sourcePicker.accessibilityIdentifier = "picker.source"
 
         presenter.view = self
     }

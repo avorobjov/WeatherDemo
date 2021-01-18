@@ -115,21 +115,36 @@ private extension MainPresenterImpl {
     }
 
     func showLiveData() {
-        weatherService.loadForecastData(query: "München,de") { result in
-            self.show(forecast: try? result.get())
+        weatherService.loadForecastData(query: "München,de") { [weak self] result in
+            do {
+                self?.show(forecast: try result.get())
+            }
+            catch {
+                self?.show(error: error)
+            }
         }
     }
 
     func showJsonData() {
-        guard
-            let dataURL = Bundle.main.url(forResource: "Response", withExtension: "json"),
-            let data = try? Data(contentsOf: dataURL)
-        else {
-            return
-        }
+        do {
+            guard
+                let dataURL = Bundle.main.url(forResource: "Response", withExtension: "json")
+            else {
+                throw ServiceError.loadError
+            }
 
-        let result = weatherService.readCachedForecast(data: data)
-        show(forecast: try? result.get())
+            let data = try Data(contentsOf: dataURL)
+            let result = weatherService.readCachedForecast(data: data)
+            show(forecast: try result.get())
+        }
+        catch {
+            show(error: error)
+        }
+    }
+
+    func show(error: Error) {
+        view?.presentMessage(title: "Error", message: error.localizedDescription)
+        view?.show(forecast: nil)
     }
 
     func show(forecast: Forecast?) {

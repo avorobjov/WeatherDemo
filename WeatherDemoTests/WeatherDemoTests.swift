@@ -20,16 +20,20 @@ class WeatherDemoTests: XCTestCase {
     }
 
     func testWeatherIcons() throws {
+        let imagesBundle = Bundle(for: MainViewController.self)
+
         let assembly = AppAssemblyImpl()
         let iconsService = assembly._iconsService
+        XCTAssert(iconsService.allWeatherConditionIds.count > 0, "Icons data not loaded")
+
         for weatherId in iconsService.allWeatherConditionIds {
             let nameDay = iconsService.iconName(for: ForecastItem(date: Date(), temperature: 123, weatherConditionId: weatherId, isDay: true))
             XCTAssertNotNil(nameDay)
-            XCTAssertNotNil(UIImage(named: nameDay!))
+            XCTAssertNotNil(UIImage(named: nameDay!, in: imagesBundle, compatibleWith: nil), "Image not found \(weatherId) \(nameDay!)")
 
             let nameNight = iconsService.iconName(for: ForecastItem(date: Date(), temperature: 123, weatherConditionId: weatherId, isDay: false))
             XCTAssertNotNil(nameNight)
-            XCTAssertNotNil(UIImage(named: nameNight!))
+            XCTAssertNotNil(UIImage(named: nameNight!, in: imagesBundle, compatibleWith: nil), "Image not found \(weatherId) \(nameNight!)")
         }
     }
 }

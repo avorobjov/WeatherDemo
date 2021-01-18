@@ -52,12 +52,16 @@ public class IconsServiceImpl {
 extension IconsServiceImpl: IconsService {
     public func iconName(for item: ForecastItem) -> String? {
         // exception
-        if item.weatherConditionId == 800 {
+        if item.weatherConditionId == 800 || item.weatherConditionId == 951 {
             return item.isDay ? "wi-day-sunny" : "wi-night-clear"
         }
 
         guard let name = iconsData[item.weatherConditionId] else {
             return nil
+        }
+
+        if [711, 721, 761, 762, 771, 781, 900, 901, 902, 903, 904, 905].contains(item.weatherConditionId) {
+            return "wi-\(name)"
         }
 
         let day = item.isDay ? "day" : "night"

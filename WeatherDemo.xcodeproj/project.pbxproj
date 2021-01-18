@@ -33,6 +33,7 @@
 		FA330CD025B47F42006E3E5C /* Icons.json in Resources */ = {isa = PBXBuildFile; fileRef = FA330CCF25B47F42006E3E5C /* Icons.json */; };
 		FA330CDB25B48B82006E3E5C /* Entities in Frameworks */ = {isa = PBXBuildFile; productRef = FA330CDA25B48B82006E3E5C /* Entities */; };
 		FA330CDD25B48B82006E3E5C /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = FA330CDC25B48B82006E3E5C /* Services */; };
+		FA55B48725B64AEF00923024 /* ServiceError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55B48625B64AEF00923024 /* ServiceError+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FA330CBC25B4613E006E3E5C /* ForecastValueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastValueCell.xib; sourceTree = "<group>"; };
 		FA330CC725B472BC006E3E5C /* ForecastViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewLayout.swift; sourceTree = "<group>"; };
 		FA330CCF25B47F42006E3E5C /* Icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Icons.json; sourceTree = "<group>"; };
+		FA55B48625B64AEF00923024 /* ServiceError+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceError+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FA330C8E25B42E90006E3E5C /* Protocols */,
+				FA55B48525B64AD700923024 /* Extensions */,
 				FA330C7F25B42E79006E3E5C /* Modules */,
 				FA330C4725B425B5006E3E5C /* SupportFiles */,
 				FA330C4A25B42687006E3E5C /* AppCoordinator.swift */,
@@ -230,6 +233,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA55B48525B64AD700923024 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA55B48625B64AEF00923024 /* ServiceError+Localization.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +412,7 @@
 				FA330C9D25B42EBA006E3E5C /* TitleSettable.swift in Sources */,
 				FA330C5025B426B2006E3E5C /* AppAssembly.swift in Sources */,
 				FA330CC825B472BC006E3E5C /* ForecastViewLayout.swift in Sources */,
+				FA55B48725B64AEF00923024 /* ServiceError+Localization.swift in Sources */,
 				FA330BF825B41B56006E3E5C /* AppDelegate.swift in Sources */,
 				FA330C8925B42E79006E3E5C /* MainContract.swift in Sources */,
 				FA330C8A25B42E79006E3E5C /* MainPresenter.swift in Sources */,

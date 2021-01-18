@@ -21,7 +21,7 @@ class AppAssemblyImpl {
         session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: .main)
 
         if
-            let dataURL = Bundle.main.url(forResource: "Response", withExtension: "json"),
+            let dataURL = Bundle.main.url(forResource: "Icons", withExtension: "json"),
             let data = try? Data(contentsOf: dataURL)
         {
             _iconsService.readIconsData(from: data)
