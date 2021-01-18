@@ -10,6 +10,7 @@ import UIKit
 final class MainViewController: UIViewController {
     static let margin: CGFloat = 10
 
+    @IBOutlet private var sourcePicker: UISegmentedControl!
     @IBOutlet private var forecastView: ForecastView!
 
     private let presenter: MainPresenter
@@ -31,11 +32,29 @@ final class MainViewController: UIViewController {
 
         presenter.view = self
     }
+
+    @IBAction private func onSourceChanged() {
+        presenter.selectSource(at: sourcePicker.selectedSegmentIndex)
+    }
 }
 
 extension MainViewController: MainView {
-    func show(forecast: ForecastViewModel) {
+    func show(forecast: ForecastViewModel?) {
         forecastView.viewModel = forecast
+    }
+
+    func show(sources: [String], selectedIndex: Int) {
+        if sourcePicker.numberOfSegments != sources.count {
+            sourcePicker.removeAllSegments()
+            for (index, title) in sources.enumerated() {
+                sourcePicker.insertSegment(withTitle: title, at: index, animated: false)
+            }
+        }
+        else {
+            for (index, title) in sources.enumerated() {
+                sourcePicker.setTitle(title, forSegmentAt: index)
+            }
+        }
     }
 }
 

@@ -246,7 +246,7 @@
 
   "800": {
     "label": "clear sky",
-    "icon": "day-sunny"
+    "icon": "sunny"
   },
 
   "801": {
@@ -307,7 +307,7 @@
 
   "951": {
     "label": "calm",
-    "icon": "day-sunny"
+    "icon": "sunny"
   },
 
   "952": {

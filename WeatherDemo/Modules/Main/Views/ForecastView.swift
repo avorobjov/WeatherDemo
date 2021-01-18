@@ -14,20 +14,6 @@ struct ForecastViewModel {
         case header(title: String, alignment: NSTextAlignment)
         case value(temp: String, image: UIImage?)
     }
-
-//    let days: [Day]
-//    let forecatsTimeHeaders: [String]
-//
-//    struct Day {
-//        let date: String
-//
-//        let items: [Item]
-//    }
-//
-//    struct Item {
-//        let temperature: String?
-//        let icon: UIImage?
-//    }
 }
 
 final class ForecastView: UIView {

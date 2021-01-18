@@ -23,8 +23,6 @@ class ForecastHeaderCell: UICollectionViewCell {
 
         titleLabel.font = UIFont.boldSystemFont(ofSize: UIFont.systemFontSize)
         titleLabel.textColor = .label
-
-        titleLabel.heightAnchor.constraint(equalToConstant: titleLabel.font.lineHeight).isActive = true
     }
 
     func configure(title: String, alignment: NSTextAlignment) {

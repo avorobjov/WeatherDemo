@@ -22,8 +22,10 @@ class ForecastValueCell: UICollectionViewCell {
 
         backgroundColor = .systemGray5
 
-        tempLabel.font = UIFont.boldSystemFont(ofSize: UIFont.systemFontSize)
+        tempLabel.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
         tempLabel.textColor = .label
+
+        imageView.tintColor = tempLabel.textColor
     }
 
     func configure(temp: String, image: UIImage?) {

@@ -212,5 +212,6 @@ opt_in_rules: # some rules are only opt-in
 
 excluded:
     - Pods
+    - "*/*Tests"
     - "*Tests"
     - "*/Package.swift"

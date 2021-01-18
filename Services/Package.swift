@@ -19,6 +19,7 @@ let package = Package(
             dependencies: ["Entities"]),
         .testTarget(
             name: "ServicesTests",
-            dependencies: ["Services", "Entities"]),
+            dependencies: ["Services", "Entities"],
+            resources: [.process("Data")]),
     ]
 )

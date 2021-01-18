@@ -9,9 +9,9 @@ import UIKit
 
 class ForecastViewLayout: UICollectionViewLayout {
     private static let headerHeight: CGFloat = 30
-    private static let headerWidth: CGFloat = 80
-    private static let valueHeight: CGFloat = 50
-    private static let valueWidth: CGFloat = 50
+    private static let headerWidth: CGFloat = 100
+    private static let valueHeight: CGFloat = 70
+    private static let valueWidth: CGFloat = 80
 
     override var collectionViewContentSize: CGSize {
         guard

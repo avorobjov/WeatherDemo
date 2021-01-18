@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,8 @@
 		FA330CBE25B4613E006E3E5C /* ForecastValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA330CBC25B4613E006E3E5C /* ForecastValueCell.xib */; };
 		FA330CC825B472BC006E3E5C /* ForecastViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA330CC725B472BC006E3E5C /* ForecastViewLayout.swift */; };
 		FA330CD025B47F42006E3E5C /* Icons.json in Resources */ = {isa = PBXBuildFile; fileRef = FA330CCF25B47F42006E3E5C /* Icons.json */; };
+		FA330CDB25B48B82006E3E5C /* Entities in Frameworks */ = {isa = PBXBuildFile; productRef = FA330CDA25B48B82006E3E5C /* Entities */; };
+		FA330CDD25B48B82006E3E5C /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = FA330CDC25B48B82006E3E5C /* Services */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA330CDD25B48B82006E3E5C /* Services in Frameworks */,
+				FA330CDB25B48B82006E3E5C /* Entities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +123,7 @@
 				FA330C0D25B41B57006E3E5C /* WeatherDemoTests */,
 				FA330C1825B41B57006E3E5C /* WeatherDemoUITests */,
 				FA330BF525B41B56006E3E5C /* Products */,
+				FA330CD925B48B82006E3E5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +225,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FA330CD925B48B82006E3E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +249,10 @@
 			dependencies = (
 			);
 			name = WeatherDemo;
+			packageProductDependencies = (
+				FA330CDA25B48B82006E3E5C /* Entities */,
+				FA330CDC25B48B82006E3E5C /* Services */,
+			);
 			productName = WeatherDemo;
 			productReference = FA330BF425B41B56006E3E5C /* WeatherDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -715,6 +731,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA330CDA25B48B82006E3E5C /* Entities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Entities;
+		};
+		FA330CDC25B48B82006E3E5C /* Services */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Services;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA330BEC25B41B56006E3E5C /* Project object */;
 }

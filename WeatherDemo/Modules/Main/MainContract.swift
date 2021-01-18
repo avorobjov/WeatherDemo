@@ -9,8 +9,11 @@ import Foundation
 
 protocol MainPresenter: Presenter {
     var view: MainView? { get set }
+
+    func selectSource(at index: Int)
 }
 
 protocol MainView: View, MessagePresenting, TitleSettable {
-    func show(forecast: ForecastViewModel)
+    func show(forecast: ForecastViewModel?)
+    func show(sources: [String], selectedIndex: Int)
 }

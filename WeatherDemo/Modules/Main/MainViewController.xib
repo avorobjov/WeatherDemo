@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="WeatherDemo" customModuleProvider="target">
             <connections>
                 <outlet property="forecastView" destination="5jv-tr-Iy4" id="piQ-bV-aQS"/>
+                <outlet property="sourcePicker" destination="HnP-05-Ikw" id="iH5-f3-guq"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dvF-8K-V6d"/>
             </connections>
         </placeholder>
@@ -20,8 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-UO-jw3">
+                    <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HnP-05-Ikw">
+                            <rect key="frame" x="24" y="10" width="366" height="32"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <connections>
+                                <action selector="onSourceChanged" destination="-1" eventType="valueChanged" id="cx9-0o-5hr"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HnP-05-Ikw" secondAttribute="bottom" constant="10" id="DaQ-tq-D44"/>
+                        <constraint firstItem="HnP-05-Ikw" firstAttribute="top" secondItem="eUx-UO-jw3" secondAttribute="top" constant="10" id="ZJT-uP-Y8v"/>
+                        <constraint firstItem="HnP-05-Ikw" firstAttribute="leading" secondItem="eUx-UO-jw3" secondAttribute="leading" constant="24" id="bYO-LQ-5T2"/>
+                        <constraint firstAttribute="trailing" secondItem="HnP-05-Ikw" secondAttribute="trailing" constant="24" id="xlm-2r-xKK"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jv-tr-Iy4" customClass="ForecastView" customModule="WeatherDemo" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </subviews>
@@ -29,9 +52,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="5jv-tr-Iy4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2NJ-et-F5u"/>
+                <constraint firstItem="5jv-tr-Iy4" firstAttribute="top" secondItem="eUx-UO-jw3" secondAttribute="bottom" id="3ch-sQ-WY6"/>
+                <constraint firstItem="eUx-UO-jw3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4gq-01-3XJ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5jv-tr-Iy4" secondAttribute="bottom" id="99T-rz-mTf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eUx-UO-jw3" secondAttribute="trailing" id="Agu-Jv-4Ii"/>
+                <constraint firstItem="eUx-UO-jw3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NQ4-5C-mgr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5jv-tr-Iy4" secondAttribute="trailing" id="iSI-eG-RK7"/>
-                <constraint firstItem="5jv-tr-Iy4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sOw-gF-ohe"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="139" y="70"/>
